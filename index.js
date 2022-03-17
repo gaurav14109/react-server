@@ -5,7 +5,7 @@ const bodyParser = require('body-parser')
 app.use(cors())
 app.use(bodyParser.json())
 
-app.get('/', (req, res) => {
+app.get('/api', (req, res) => {
     res.send({data:'React web server is working'})
 })
 app.listen(4000, (error) => {
